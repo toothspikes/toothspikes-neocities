@@ -32,5 +32,5 @@ jobs:
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
-        dist_dir: /home/ksumbags/toothspikes-neocities
+        dist_dir: neocities_site
         protected_files: 'dropbox/*'
