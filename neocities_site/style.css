@@ -106,6 +106,7 @@ body {
   background-image: var(--header-image);
   background-size: 100%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 /* navigation section!! */
@@ -328,7 +329,7 @@ strong {
   content: "\2713";
   display: none;
   cursor: wait;
-  color:  var(--main-pink);
+  color:  var(--text-pink);
 }
 
 .checkbox input:checked ~ .checkmark:after {
@@ -342,16 +343,19 @@ background-image: url("https://toothspikes.neocities.org/images/stampdisplayback
 }
 
 .todolist {
- background-image: url("https://toothspikes.neocities.org/images/purpletodo.jpg");
- width: 250px;
- height: 250px;
- position: absolute;
- top: 1190px;
- left: 0;
- border-style: outset;
- border-color: var(--main-pink);
- border-radius: 10px;
- border-width: 2px 6px 6px 2px; /*top right bottom left*/
+  background-image: url("https://toothspikes.neocities.org/images/purpletodo.jpg");
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 1190px;
+  left: 0;
+  border-style: outset;
+  border-color: var(--text-pink);
+  border-radius: 10px;
+  border-width: 2px 6px 6px 2px; /*top right bottom left*/
+  color: var(--text-pink);
+  text-shadow: 2px 2px grey;
+  font-size: 12px;
 }
 
 #topBar {
