@@ -170,10 +170,16 @@ main {
 
 #leftSidebar {
   scrollbar-color: #8C31A7 #51225E;
+  margin-right: 15px; 
+  width: 250px; 
+  height: 500px;
   order: 1;
 }
 
 #rightSidebar {
+  margin-left: 15px; 
+  width: 200px; 
+  height: 750px;
   order: 3;
 }
 
@@ -185,7 +191,10 @@ main {
   padding: 8px;
   border-color: var(--main-border);
   border-style: outset;
-  
+  height: 750px; 
+  overflow-y: auto; 
+  overflow-x: clip; 
+  scrollbar-color: #43256E #241445;
 }
 
 #blinkies {
@@ -195,6 +204,12 @@ main {
   padding: 1px;
   border-color: var(--main-border);
   border-style: outset;
+  font-family: Sanctuary;
+  width: 485px;
+  height: 750px;
+  overflow-y: auto;
+  overflow-x: clip; 
+  scrollbar-color: #43256E #241445;
 }
 
 #xtra {
@@ -204,6 +219,11 @@ main {
   padding: 1px;
   border-color: var(--main-border);
   border-style: outset;
+  width: 480px; 
+  height: 750px; 
+  overflow-y: auto; 
+  overflow-x: clip; 
+  scrollbar-color: #43256E #241445;
 }
 
 #aboutSection:target {
