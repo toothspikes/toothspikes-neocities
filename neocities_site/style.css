@@ -1,9 +1,402 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+/*Variables*/
+:root {
+  --header-image: url('images/hellokittypurple.jpg');
+  --body-bg-image: url('https://toothspikes.neocities.org/images/background.gif');
+  /* colors */
+  --content: #43256E;
+  --text-pink: #ED64F5;
+  --borders: #763FB3;
+  --main-bg: #43256E;
+  --main-border: #371E59;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftRegular-Bmg3.otf');
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftBold-nMK1.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftBoldItalic-1y1e.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftItalic-R8Mo.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Sanctuary;
+  src: url('https://toothspikes.neocities.org/fonts/sanctuary/downloads/Sanctuary.ttf');
+}
+
+@font-face {
+  font-family: bitmgothic;
+  src: url('https://toothspikes.neocities.org/fonts/bitmgothic/Bitmgothic/Bitmgothic.ttf');
+}
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  background-color: #402552;
+  /* below code is for a background image */
+  background-size: 70px;
+  color: #DFD4E7;
+  background-image: var();
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  /*If width us changed, change width in media query*/
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*Links*/
+#container a {
+  color: var(--text-pink);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+#header {
+  
+  width: 100%;
+  background-color: #5e4e8c;
+  height: 50px;
+  background-image: var(--header-image);
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+/* navigation section!! */
+#navbar {
+  height: 30px;
+  background-color: #13092D;
+  /* navbar color */
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 3px;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+/* navigation links*/
+#navbar li a {
+  color: var(--borders);
+  /* navbar text color */
+  font-weight: 800;
+  text-decoration: none;
+  /* this removes the underline */
+}
+
+/* navigation link when a link is hovered over */
+#navbar li a:hover {
+  color: var(--text-pink);
+  text-decoration: underline;
+}
+
+#flex {
+  display: flex;
+}
+
+aside {
+  background-color: #241445;
+  width: 200px;
+  padding: 10px;
+  font-size: smaller;
+  border-radius: 25px;
+  border-color: var(--borders);
+  border-style: double;
+}
+
+main {
+  background-image: url("https://toothspikes.neocities.org/images/purplelace.jpg");
+  flex: 1;
+  padding: 20px;
+  width: 500px;
+  --mask: 
+    linear-gradient(#000 0 0) 50%/calc(100% - 18.5px) calc(100% - 18.5px) no-repeat,
+    radial-gradient(farthest-side,#000 98%,#0000) 0 0/20px 20px round;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  border-width: 2px;
+  order: 2;
+}
+
+#leftSidebar {
+  scrollbar-color: #8C31A7 #51225E;
+  order: 1;
+}
+
+#rightSidebar {
+  order: 3;
+}
+
+/*This is the different content that'll be swapped out of the main box*/
+#aboutSection {
+  display: none;
+  background-color: var(--main-bg);
+  flex: 1;
+  padding: 8px;
+  border-color: var(--main-border);
+  border-style: outset;
+  
+}
+
+#blinkies {
+  display: none;
+  background-color: var(--main-bg);
+  flex: 1;
+  padding: 1px;
+  border-color: var(--main-border);
+  border-style: outset;
+}
+
+#xtra {
+  display: none;
+  background-color: var(--main-bg);
+  flex: 1;
+  padding: 1px;
+  border-color: var(--main-border);
+  border-style: outset;
+}
+
+#aboutSection:target {
+  display: block;
+}
+
+#blinkies:target {
+  display: block; 
+}
+ 
+#xtra:target {
+  display: block; 
+}
+
+#stampbox {
+  background-image: url("https://toothspikes.neocities.org/images/stampdisplaybackground.jpg");
+  width: 500px;
+  height: 68px;
+  position: absolute;
+  top: 1100px;
+  left: 275px;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-color: #43256E;
+  border-width: 6px 2px 0 2px;/*top right bottom left*/
+}
+
+footer {
+  background-color: #13092D;
+  /* background color for footer */
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  /* this centers the footer text */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-pink);
+}
+
+h1 {
+  font-size: 25px;
+}
+
+strong {
+  color: var(--text-pink);
+}
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+  background-color: #13092D;
+  border: 1px solid var(--text-pink);
+  padding: 10px;
+}
+
+/*updates box*/
+.box2 {
+  background-color: #20113F;
+  padding: 5px;
+  border: 1px dashed #E380FF;
+  border-radius: 15px;
+}
+
+.button {
+  background-image: linear-gradient(345deg, #b04ebf 17%, #e567ec 73%, #ebadee 95%);
+  border-color: #e567ec;
+  border-style: outset;
+  font-family: Minecraft;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.button:hover {
+  background-image: linear-gradient(135deg, #b04ebf 17%, #e567ec 73%, #ebadee 95%);
+  border-color: #e567ec;
+  border-style: inset;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /*margin-bottom: 12px;*/
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  margin: auto;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #241445;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.checkbox:hover input ~ .checkmark {
+  background-color: #8355A1;
+  box-shadow: 2px 2px 2px #241445;
+}
+
+.checkmark:after {
+  position: absolute;
+  margin: auto;
+  content: "\2713";
+  display: none;
+  cursor: wait;
+  color:  var(--main-pink);
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+marquee img {
+display: inline-block;
+margin: 0;
+background-image: url("https://toothspikes.neocities.org/images/stampdisplaybackground.jpg")
+}
+
+.todolist {
+ background-image: url("https://toothspikes.neocities.org/images/purpletodo.jpg");
+ width: 250px;
+ height: 250px;
+ position: absolute;
+ top: 1190px;
+ left: 0;
+ border-style: outset;
+ border-color: var(--main-pink);
+ border-radius: 10px;
+ border-width: 2px 6px 6px 2px; /*top right bottom left*/
+}
+
+#topBar {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: smaller;
+  background-color: #AB4BAB;
+}
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media only screen and (max-width: 900px) {
+  #flex {
+      flex-wrap: wrap;
+  }
+
+  aside {
+      width: 100%;
+  }
+
+  /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+  main {
+      order: 1;
+  }
+
+  #leftSidebar {
+      order: 2;
+  }
+
+  #rightSidebar {
+      order: 3;
+  }
+
+  #navbar ul {
+      flex-wrap: wrap;
+  }
 }
