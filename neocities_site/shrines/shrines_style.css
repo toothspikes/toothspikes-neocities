@@ -1,0 +1,19 @@
+:root {
+  --body-bg-image: url('toothspikes-neocities/neocities_site/shrines/shrines-bk.jpg');
+}
+
+@font-face {
+  font-family: bitmgothic;
+  src: url('https://toothspikes.neocities.org/fonts/bitmgothic/Bitmgothic/Bitmgothic.ttf');
+}
+
+body {
+  background-image: var(--body-bg-image);
+  margin: 0;
+  background-size: cover;
+  color: black;
+}
+h1 {
+  font-family: bitmgothic;
+  
+}
