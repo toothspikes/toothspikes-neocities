@@ -250,6 +250,10 @@ main {
   border-width: 6px 2px 0 2px;/*top right bottom left*/
 }
 
+#musicbox {
+  background-color: var(--main-bg);
+}
+
 footer {
   background-color: #13092D;
   /* background color for footer */

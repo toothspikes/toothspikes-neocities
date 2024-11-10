@@ -10,7 +10,6 @@
 body {
   background-image: var(--body-bg-image);
   margin: 0;
-  background-size: cover;
   color: black;
 }
 h1 {
