@@ -12,9 +12,10 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
+  min-height: 100%;
   margin: 0;
   color: black;
-  overflow-y: scroll; 
+  overflow-y: auto; 
 }
 h1 {
   font-family: bitmgothic;
