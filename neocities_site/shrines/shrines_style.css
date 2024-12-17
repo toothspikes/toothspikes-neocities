@@ -9,6 +9,10 @@
 
 body {
   background-image: var(--body-bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   color: black;
 }
