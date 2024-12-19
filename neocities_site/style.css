@@ -281,11 +281,12 @@ strong {
 /* this is just a cool box, it's the darker colored one */
 .box {
   background-color: #13092D;
-  border: 1px solid var(--text-pink);
+  border: 1px dashed var(--text-pink);
+  border-radius: 15px;
   padding: 10px;
   overflow-y: auto; 
   scrollbar-color: #43256E #241445;
-  height: 300px;
+  height: 200px;
 }
 
 /*updates box*/
