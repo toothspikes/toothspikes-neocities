@@ -283,6 +283,9 @@ strong {
   background-color: #13092D;
   border: 1px solid var(--text-pink);
   padding: 10px;
+  overflow-y: auto; 
+  scrollbar-color: #43256E #241445;
+  height: 300px;
 }
 
 /*updates box*/
@@ -365,22 +368,6 @@ marquee img {
 display: inline-block;
 margin: 0;
 background-image: url("https://toothspikes.neocities.org/images/stampdisplaybackground.jpg")
-}
-
-.todolist {
-  background-image: url("https://toothspikes.neocities.org/images/purpletodo.jpg");
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 1190px;
-  left: 0;
-  border-style: outset;
-  border-color: var(--text-pink);
-  border-radius: 10px;
-  border-width: 2px 6px 6px 2px; /*top right bottom left*/
-  color: var(--text-pink);
-  text-shadow: 2px 2px grey;
-  font-size: 12px;
 }
 
 #topBar {
