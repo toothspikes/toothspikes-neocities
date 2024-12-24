@@ -1,5 +1,6 @@
 :root {
   --body-bg-image: url('https://toothspikes.neocities.org/shrines/shrines-bk.jpg');
+  --cd-shrine: url('https://toothspikes.neocities.org/shrines/badtzmaruRadio.jpg')
 }
 
 @font-face {
@@ -18,6 +19,19 @@ body {
   text-shadow: 1px 1px lightgrey;
   overflow-y: auto; 
 }
+
+#musicShrine {
+  background-image: var(--cd-shrine);
+  width: 75px;
+  transition: transform .2s;
+  top: 350px;
+  left: 350px;
+}
+
+#musicShrine:hover {
+  transform: scale(110);
+}
+
 h1 {
   font-family: bitmgothic;
 }
