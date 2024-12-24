@@ -10,7 +10,7 @@
 body {
   background-image: var(--body-bg-image);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: top center;
   min-height: 100%;
   margin: 0;
