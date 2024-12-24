@@ -14,7 +14,8 @@ body {
   background-position: top center;
   min-height: 100%;
   margin: 0;
-  color: black;
+  color: lightslategrey;
+  text-shadow: 1px 1px lightgrey;
   overflow-y: auto; 
 }
 h1 {
