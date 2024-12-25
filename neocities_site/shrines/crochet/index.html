@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+	<div id="container">
+		<div id="musicplayer">
+        	<div class="musicscreen"></div>
+			<div class="track-info">
+            	<h3 class="track-title">Song Title</h3>
+                <p class="track-artist">Artist Name</p>
+			</div>
+            <div id="playbutton"></div>
+            <div id="backbutton"></div>
+            <div id="forwardbutton"></div>
+            <div id="pausebutton"></div>
+            <div class="time-controls">
+            	<span class="current-time">0:00</span>
+                <input type="range" class="progress-bar" value="0" min="0" max="100">
+                <span class="total-time">0:00</span>
+            </div>
+            <div class="volume-container">
+            	<span class="volume-icon">🔊</span>
+                <input type="range" class="volume-control" value="100" min="0" max="100">
+            </div>
+		</div>
+	</div>
 
+	<style>
+		#musicplayer {
+    		width: 250px;
+        	height: 400px;
+    		background-color: #241445;
+            position: absolute;
+            margin: 30px;
+            padding 8px;
+            border-radius: 20px;
+            border-style: double;
+            border-color: #9754E0 #763FB3 #763FB3 #9754E0;
+    	}
+    	#container {
+    		margin: 0;
+       		max-width: 1000px;
+            position: relative;
+    	}
+        
+        #playbutton {
+        	width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-left: 35px solid white;
+			border-bottom: 20px solid transparent;
+			top: 250px;
+            left: 145px;
+            position: absolute;
+        }
+        
+        #pausebutton {
+        	width: 38px;
+            height: 38px;
+            position: absolute;
+            top: 250px;
+            left: 80px;
+            background-color: ;
+            border-width: 0 0 0 25px;
+            border-style: double;
+            border-color: white;
+        }
+        
+        #backbutton {
+        	width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 20px solid white;
+			top: 250px;
+            left: 20px;
+            position: absolute;
+        }
+        
+        #backbutton::before {
+        	position: absolute;
+            top: -20px;
+            left: -10px;
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 20px solid white;
+            content: '';
+        }
+        
+        #forwardbutton {
+        	width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid white;
+			top: 250px;
+            left: 220px;
+            position: absolute;
+        }
+        
+        #forwardbutton::before {
+        	position: absolute;
+            top: -20px;
+            left: -30px;
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid white;
+            content: '';
+        }
+        .musicscreen {
+            border-radius: 20px;            
+            position: absolute;
+            display: block;
+			top: 10px;
+            left: 10px;
+            width: 225px;
+            height: 180px;
+            border-color: #763FB3;
+            border-style: double;
+            transition: background-image 0.3s ease;
+        }
+        
+        .track-info {
+        	color: white;
+            position: absolute;
+            top: 200px;
+			text-align: center;
+            width: 250px;
+        }
+        
+        .track-title {
+        	margin: 0;
+        }
+        
+        .track-artist {
+        	margin: 0;
+        }
+        
+        .time-controls {
+        	display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            margin-bottom: 15px;
+            position: absolute;
+            top: 320px;
+            left: 20px;
+        }
+        
+        .progress-bar {
+        	flex-grow: 1;
+            height: 5px;
+            cursor: pointer;
+        }
+        
+        .volume-container {
+        	display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            margin-top: 15px;
+            top: 350px;
+            left: 50px;
+            position: absolute;
+        }
+        
+        .volume-control {
+        	width: 100px;
+        }
+        
+        /* Style for range inputs (progress and volume) */
+input[type="range"] {
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+        
+	</style>
+	<script>
+		const songs = [
+        	'https://file.garden/Z2OAQ7JkJHUBdL39/ytmp3free.cc_i-wear-your-ring-youtubemp3free.org.mp3',
+            'https://file.garden/Z2OAQ7JkJHUBdL39/ytmp3free.cc_joy-division-twenty-four-hours-official-lyric-video-youtubemp3free.org.mp3',
+            'https://file.garden/Z2OAQ7JkJHUBdL39/ytmp3free.cc_sisters-of-mercy-alice-youtubemp3free.org.mp3'
+            
+        ];
+       
+        const musicScreens = [
+        
+        	'https://toothspikes.neocities.org/images/musicplayerscreen1.gif',
+            'https://toothspikes.neocities.org/images/musicplayerscreen2.gif',
+            'https://toothspikes.neocities.org/images/musicplayerscreen3.gif'
+            
+        ];
+        
+        const trackInfo = [
+        
+        { title: 'I Wear Your Ring', artist: 'Cocteau Twins' },
+        { title: 'Twenty Four Hours', artist: 'Joy Division' },
+        { title: 'Alice', artist: 'Sisters of Mercy' }
+        
+        ];
+        
+        const audio = new Audio();
+        let currentSong = 0;
+        
+        function formatTime(seconds) {
+        	const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes}:${remainingSeconds.toString().padStart(2,'0')}`;
+        }
+        
+        function updateProgress() {
+        	const progressBar = document.querySelector('.progress-bar');
+            const currentTime = document.querySelector('.current-time');
+            const totalTime = document.querySelector('.total-time');
+            
+            if (progressBar && currentTime && totalTime) {
+            	const progress = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = progress;
+                
+                currentTime.textContent = formatTime(audio.currentTime);
+                totalTime.textContent = formatTime(audio.duration);
+           }
+        
+        function updateMusicScreen() {
+        	const currentScreen = document.querySelector('musicscreen');
+            if(currentScreen) {
+            	currentScreen.style.backgroundImage = `url(${backgroundImages[currentSong]})`;
+            }
+            
+            const trackTitle = document.querySelector('.track-title');
+            const trackArtist = document.querySelector('.track-artist');
+            
+            if(trackTitle && trackArtist) {
+            	trackTitle.textContent = trackInfo[currentSong].title;
+                trackArtist.textContent = trackInfo[currentSong].artist;
+            }
+        }
+        
+        audio.src = songs[currentSong];
+        updateMusicScreen();
+        
+        document.querySelector('.progress-bar').addEventListener('input', function() {
+        	const time = (this.value / 100) * audio.duration;
+            audio.currentTime = time;
+        });
+        
+        document.querySelector(.'volume-control').addEventListener('input', function() {
+        	audio.volume = this.value / 100;
+        });
+        
+        audio.addEventListener('timeupdate', updateProgress);
+        
+     	document.getElementById('playbutton').addEventListener('click', function() {
+        if (audio.paused) {
+        	audio.play();
+        }
+        else {
+        	audio.pause();
+        }
+    });
+    
+    document.getElementById('pausebutton').addEventListener('click', function() {
+    	audio.pause();
+    });
+    
+    document.getElementById('forwardbutton').addEventListener('click', function() {
+    	currentSong = (currentSong + 1) % songs.length;
+    	audio.src = songs[currentSong];
+        updateMusicScreen();
+    	if(!audio.paused) {
+    		audio.play();
+    	}
+    });
+    
+    document.getElementById('backbutton').addEventListener('click', function() {
+    	currentSong = (currentSong - 1 + songs.length) % songs.length;
+        audio.src = songs[currentSong];
+        updateMusicScreen();
+        if(!audio.paused) {
+        	audio.play();
+        }
+    });
+    
+    audio.addEventListener('ended', function() {
+    	currentSong = (currentSong + 1) % songs.length;
+        audio.src = songs[currentSong];
+        updateMusicScreen();
+        audio.play();
+    });
+	</script>
+</body>
+</html>
