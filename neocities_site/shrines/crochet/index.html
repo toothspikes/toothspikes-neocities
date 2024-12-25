@@ -34,7 +34,7 @@
     		background-color: #241445;
             position: absolute;
             margin: 30px;
-            padding 8px;
+            padding: 8px;
             border-radius: 20px;
             border-style: double;
             border-color: #9754E0 #763FB3 #763FB3 #9754E0;
@@ -62,7 +62,6 @@
             position: absolute;
             top: 250px;
             left: 80px;
-            background-color: ;
             border-width: 0 0 0 25px;
             border-style: double;
             border-color: white;
@@ -175,7 +174,7 @@
         }
         
         /* Style for range inputs (progress and volume) */
-input[type="range"] {
+/*input[type="range"] {
     -webkit-appearance: none;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -189,7 +188,7 @@ input[type="range"]::-webkit-slider-thumb {
     background: white;
     border-radius: 50%;
     cursor: pointer;
-}
+}*/
         
 	</style>
 	<script>
@@ -237,6 +236,7 @@ input[type="range"]::-webkit-slider-thumb {
                 currentTime.textContent = formatTime(audio.currentTime);
                 totalTime.textContent = formatTime(audio.duration);
            }
+        }
         
         function updateMusicScreen() {
         	const currentScreen = document.querySelector('musicscreen');
@@ -261,7 +261,7 @@ input[type="range"]::-webkit-slider-thumb {
             audio.currentTime = time;
         });
         
-        document.querySelector(.'volume-control').addEventListener('input', function() {
+        document.querySelector('.volume-control').addEventListener('input', function() {
         	audio.volume = this.value / 100;
         });
         
