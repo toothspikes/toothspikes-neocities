@@ -6,7 +6,7 @@
 <body>
 	<div id="container">
 		<div id="musicplayer">
-        	<div class="musicscreen">Music Screen</div>
+        	<div class="musicscreen"></div>
 			<div class="track-info">
             	<h3 class="track-title">Song Title</h3>
                 <p class="track-artist">Artist Name</p>
@@ -235,6 +235,18 @@
                 trackArtist.textContent = trackInfo[currentSong].artist;
             }
         }
+
+        function loadSong() {
+            audio.src = songs[currentSong];
+            audio.load();
+            updateMusicScreen();
+
+            audio.addEventListener('loadmetadata', function() {
+                updateProgress();
+            });
+
+            audio.play();
+        }
         
         audio.src = songs[currentSong];
         updateMusicScreen();
@@ -266,19 +278,13 @@
     document.getElementById('forwardbutton').addEventListener('click', function() {
     	currentSong = (currentSong + 1) % songs.length;
     	audio.src = songs[currentSong];
-        updateMusicScreen();
-    	if(!audio.paused) {
-    		audio.play();
-    	}
+        loadSong();
     });
     
     document.getElementById('backbutton').addEventListener('click', function() {
     	currentSong = (currentSong - 1 + songs.length) % songs.length;
         audio.src = songs[currentSong];
-        updateMusicScreen();
-        if(!audio.paused) {
-        	audio.play();
-        }
+        loadSong();
     });
     
     audio.addEventListener('ended', function() {
