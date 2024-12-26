@@ -252,16 +252,19 @@ main {
 
 
 #musicPlayerContainer {
-  position: absolute;
+  position: relative;
   top: 1000px;
   right: 10px;
-}
-#musicplayer {
   width: 250px;
   height: 400px;
+  margin: 20px auto;
+}
+
+#musicplayer {
+  width: 100%;
+  height: 100%;
   background-color: #241445;
-  position: absolute;
-  margin: 30px;
+  position: relative;
   padding: 8px;
   border-radius: 20px;
   border-style: double;
