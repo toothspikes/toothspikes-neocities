@@ -252,12 +252,11 @@ main {
 
 
 #musicPlayerContainer {
-  position: relative;
+  position: absolute;
   top: 1000px;
-  right: 10px;
+  right: 15px;
   width: 250px;
   height: 400px;
-  margin: 20px auto;
 }
 
 #musicplayer {
