@@ -21,7 +21,7 @@
                 <span class="total-time">0:00</span>
             </div>
             <div class="volume-container">
-            	<span class="volume-icon">🔊</span>
+            	<span class="volume-icon"></span>
                 <input type="range" class="volume-control" value="100" min="0" max="100">
             </div>
 		</div>
@@ -173,23 +173,6 @@
         	width: 100px;
         }
         
-        /* Style for range inputs (progress and volume) */
-/*input[type="range"] {
-    -webkit-appearance: none;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    height: 5px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-}*/
-        
 	</style>
 	<script>
 		const songs = [
@@ -239,7 +222,7 @@ input[type="range"]::-webkit-slider-thumb {
         }
         
         function updateMusicScreen() {
-        	const currentScreen = document.querySelector('musicscreen');
+        	const currentScreen = document.querySelector('.musicscreen');
             if(currentScreen) {
             	currentScreen.style.backgroundImage = `url(${backgroundImages[currentSong]})`;
             }
