@@ -6,7 +6,7 @@
 <body>
 	<div id="container">
 		<div id="musicplayer">
-        	<div class="musicscreen"></div>
+        	<div class="musicscreen">Music Screen</div>
 			<div class="track-info">
             	<h3 class="track-title">Song Title</h3>
                 <p class="track-artist">Artist Name</p>
@@ -224,7 +224,7 @@
         function updateMusicScreen() {
         	const currentScreen = document.querySelector('.musicscreen');
             if(currentScreen) {
-            	currentScreen.style.backgroundImage = `url(${backgroundImages[currentSong]})`;
+            	currentScreen.style.backgroundImage = `url(${musicScreens[currentSong]})`;
             }
             
             const trackTitle = document.querySelector('.track-title');
