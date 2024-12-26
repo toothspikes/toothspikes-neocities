@@ -253,8 +253,8 @@ main {
 
 #musicPlayerContainer {
   position: absolute;
-  top: 1000px;
-  right: 15px;
+  top: 1200px;
+  left: 5px;
   width: 250px;
   height: 400px;
 }
@@ -337,6 +337,7 @@ main {
     border-left: 20px solid white;
     content: '';
   }
+
   .musicscreen {
       border-radius: 20px;            
       position: absolute;
