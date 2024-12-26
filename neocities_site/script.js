@@ -95,24 +95,24 @@ else {
 });
 
 document.getElementById('pausebutton').addEventListener('click', function() {
-audio.pause();
+    audio.pause();
 });
 
 document.getElementById('forwardbutton').addEventListener('click', function() {
-currentSong = (currentSong + 1) % songs.length;
-audio.src = songs[currentSong];
-loadSong();
+    currentSong = (currentSong + 1) % songs.length;
+    audio.src = songs[currentSong];
+    loadSong();
 });
 
 document.getElementById('backbutton').addEventListener('click', function() {
-currentSong = (currentSong - 1 + songs.length) % songs.length;
-audio.src = songs[currentSong];
-loadSong();
+    currentSong = (currentSong - 1 + songs.length) % songs.length;
+    audio.src = songs[currentSong];
+    loadSong();
 });
 
 audio.addEventListener('ended', function() {
-currentSong = (currentSong + 1) % songs.length;
-audio.src = songs[currentSong];
-updateMusicScreen();
-audio.play();
+    currentSong = (currentSong + 1) % songs.length;
+    audio.src = songs[currentSong];
+    updateMusicScreen();
+    audio.play();
 });
