@@ -375,6 +375,7 @@ main {
     flex-grow: 1;
     height: 5px;
     cursor: pointer;
+    position: absolute;
   }
   
   .volume-container {
@@ -390,6 +391,7 @@ main {
   
   .volume-control {
     width: 100px;
+    position: absolute;
   }
   
 
