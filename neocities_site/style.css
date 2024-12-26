@@ -250,6 +250,12 @@ main {
   border-width: 6px 2px 0 2px;/*top right bottom left*/
 }
 
+
+#musicPlayerContainer {
+  position: absolute;
+  top: 1000px;
+  right: 10px;
+}
 #musicplayer {
   width: 250px;
   height: 400px;
@@ -260,8 +266,6 @@ main {
   border-radius: 20px;
   border-style: double;
   border-color: #9754E0 #763FB3 #763FB3 #9754E0;
-  top: 1000px;
-  right: 10px;
 }
   
   #playbutton {
