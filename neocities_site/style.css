@@ -406,6 +406,11 @@ main {
     width: 100px;
     position: absolute;
   }
+
+  .volume-icon {
+    display: flex;
+    align-items: center;
+  }
   /*End of music player*/
   
 
