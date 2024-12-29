@@ -79,8 +79,18 @@ function loadSong() {
     audio.play();
 }
 
-audio.src = songs[currentSong];
-updateMusicScreen();
+document.addEventListener('DOMContentLoaded', function() {
+    audio.src = songs[currentSong];
+    updateMusicScreen();
+
+    const trackTitle = document.querySelector('.track-title');
+    const trackArtist = document.querySelector('.track-artist');
+
+    if(trackTitle && trackArtist) {
+        trackTitle.textContent = trackInfo[currentSong].title;
+        trackArtist.textContent = trackInfo[currentSong].artist;
+    }
+});
 
 document.querySelector('.progress-bar').addEventListener('input', function() {
     const time = (this.value / 100) * audio.duration;
