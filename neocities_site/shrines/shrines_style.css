@@ -23,15 +23,13 @@ body {
 
 #musicShrine {
   background-image: var(--cd-shrine);
-  width: 75px;
-  height: 75px;
+  width: 150px;
+  height: 150px;
   transition: transform 0.2s;
   top: 350px;
   left: 350px;
   position: absolute;
   background-size: cover;
-  /* Debug styling */
-  border: 2px solid red;
 }
 
 #musicShrine:hover {
