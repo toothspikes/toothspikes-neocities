@@ -10,13 +10,14 @@
 
 body {
   background-image: var(--body-bg-image);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   min-height: 100%;
   margin: 0;
-  color: lightslategrey;
-  text-shadow: 1px 1px lightgrey;
+  color: #E3E7DE;
+  text-shadow: 1px 1px #f0f2ed;
   overflow-y: auto; 
 }
 
