@@ -409,7 +409,7 @@ main {
 
   .volume-icon {
     display: flex;
-    align-items: center;
+    align-items: left;
   }
   /*End of music player*/
   
