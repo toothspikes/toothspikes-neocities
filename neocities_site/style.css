@@ -355,6 +355,7 @@ main {
     color: white;
     position: absolute;
     top: 200px;
+    left: 10px;
     text-align: center;
     width: 230px;
   }
@@ -370,19 +371,21 @@ main {
   .time-controls {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     color: white;
     margin-bottom: 15px;
     position: absolute;
     top: 320px;
-    left: 20px;
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
   }
   
   .progress-bar {
     flex-grow: 1;
     height: 5px;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     margin: 0 10px;
     width: 140px;
   }
@@ -390,10 +393,11 @@ main {
   .volume-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     color: white;
     top: 350px;
-    left: 50px;
+    left: 10px;
+    right: 10px;
     position: absolute;
     width: 200px;
   }

@@ -66,7 +66,15 @@ function loadSong() {
 
     audio.addEventListener('loadmetadata', function() {
         updateProgress();
-    });
+    }, {once: true});
+
+    const trackTitle = document.querySelector('.track-title');
+    const trackArtist = document.querySelector('.track-artist');
+    
+    if(trackTitle && trackArtist) {
+        trackTitle.textContent = trackInfo[currentSong].title;
+        trackArtist.textContent = trackInfo[currentSong].artist;
+    }
 
     audio.play();
 }
@@ -85,7 +93,7 @@ document.querySelector('.volume-control').addEventListener('input', function() {
 
 audio.addEventListener('timeupdate', updateProgress);
 
- document.getElementById('playbutton').addEventListener('click', function() {
+document.getElementById('playbutton').addEventListener('click', function() {
 if (audio.paused) {
     audio.play();
 }
