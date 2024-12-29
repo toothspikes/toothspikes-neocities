@@ -64,7 +64,7 @@ function loadSong() {
     audio.load();
     updateMusicScreen();
 
-    audio.addEventListener('loadmetadata', function() {
+    audio.addEventListener('loadedmetadata', function() {
         updateProgress();
     }, {once: true});
 
@@ -90,47 +90,47 @@ document.addEventListener('DOMContentLoaded', function() {
         trackTitle.textContent = trackInfo[currentSong].title;
         trackArtist.textContent = trackInfo[currentSong].artist;
     }
-});
 
-document.querySelector('.progress-bar').addEventListener('input', function() {
-    const time = (this.value / 100) * audio.duration;
-    audio.currentTime = time;
-});
-
-document.querySelector('.volume-control').addEventListener('input', function() {
-    audio.volume = this.value / 100;
-});
-
-audio.addEventListener('timeupdate', updateProgress);
-
-document.getElementById('playbutton').addEventListener('click', function() {
-if (audio.paused) {
-    audio.play();
-}
-else {
-    audio.pause();
-}
-});
-
-document.getElementById('pausebutton').addEventListener('click', function() {
-    audio.pause();
-});
-
-document.getElementById('forwardbutton').addEventListener('click', function() {
-    currentSong = (currentSong + 1) % songs.length;
-    audio.src = songs[currentSong];
-    loadSong();
-});
-
-document.getElementById('backbutton').addEventListener('click', function() {
-    currentSong = (currentSong - 1 + songs.length) % songs.length;
-    audio.src = songs[currentSong];
-    loadSong();
-});
-
-audio.addEventListener('ended', function() {
-    currentSong = (currentSong + 1) % songs.length;
-    audio.src = songs[currentSong];
-    updateMusicScreen();
-    audio.play();
+    document.querySelector('.progress-bar').addEventListener('input', function() {
+        const time = (this.value / 100) * audio.duration;
+        audio.currentTime = time;
+    });
+    
+    document.querySelector('.volume-control').addEventListener('input', function() {
+        audio.volume = this.value / 100;
+    });
+    
+    audio.addEventListener('timeupdate', updateProgress);
+    
+    document.getElementById('playbutton').addEventListener('click', function() {
+    if (audio.paused) {
+        audio.play();
+    }
+    else {
+        audio.pause();
+    }
+    });
+    
+    document.getElementById('pausebutton').addEventListener('click', function() {
+        audio.pause();
+    });
+    
+    document.getElementById('forwardbutton').addEventListener('click', function() {
+        currentSong = (currentSong + 1) % songs.length;
+        audio.src = songs[currentSong];
+        loadSong();
+    });
+    
+    document.getElementById('backbutton').addEventListener('click', function() {
+        currentSong = (currentSong - 1 + songs.length) % songs.length;
+        audio.src = songs[currentSong];
+        loadSong();
+    });
+    
+    audio.addEventListener('ended', function() {
+        currentSong = (currentSong + 1) % songs.length;
+        audio.src = songs[currentSong];
+        updateMusicScreen();
+        audio.play();
+    });
 });
