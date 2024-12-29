@@ -16,8 +16,8 @@ body {
   background-position: top center;
   min-height: 100vh;
   margin: 0;
-  color: #E3E7DE;
-  text-shadow: 1px 1px #f0f2ed;
+  color: #d0d6c7;
+  text-shadow: 1px 1px #E3E7DE;
   overflow-y: auto; 
 }
 
@@ -25,7 +25,7 @@ body {
   background-image: var(--cd-shrine);
   width: 75px;
   height: 75px;
-  transition: transform .2s;
+  transition: transform 0.2s;
   top: 350px;
   left: 350px;
   position: absolute;
