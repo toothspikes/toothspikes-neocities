@@ -1,6 +1,7 @@
 :root {
   --body-bg-image: url('https://toothspikes.neocities.org/shrines/shrines-bk.jpg');
-  --cd-shrine: url('https://toothspikes.neocities.org/shrines/badtzmaruRadio.png')
+  --cd-shrine: url('https://toothspikes.neocities.org/shrines/badtzmaruRadio.png');
+  --kuromi-shrine: url('https://toothspikes.neocities.org/shrines/kuromiShrine.png');
 }
 
 
@@ -33,6 +34,17 @@ body {
   transition: transform 0.2s;
   top: 200px;
   left: 250px;
+  position: absolute;
+  background-size: cover;
+}
+
+#kuromiShrine {
+  background-image: var(--kuromi-shrine);
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s;
+  top: 200px;
+  left: 450px;
   position: absolute;
   background-size: cover;
 }
