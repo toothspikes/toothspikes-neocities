@@ -3,10 +3,7 @@
   --cd-shrine: url('https://toothspikes.neocities.org/shrines/badtzmaruRadio.png')
 }
 
-@font-face {
-  font-family: bitmgothic;
-  src: url('https://toothspikes.neocities.org/fonts/bitmgothic/Bitmgothic/Bitmgothic.ttf');
-}
+
 
 body {
   background-image: var(--body-bg-image);
@@ -16,9 +13,6 @@ body {
   background-position: top center;
   min-height: 100vh;
   margin: 0;
-  color: #d0d6c7;
-  text-shadow: 1px 1px #E3E7DE;
-  overflow-y: auto; 
 }
 
 #musicShrine {
@@ -36,6 +30,3 @@ body {
   transform: scale(110%);
 }
 
-h1 {
-  font-family: bitmgothic;
-}
