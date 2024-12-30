@@ -47,6 +47,8 @@ body {
   left: 450px;
   position: absolute;
   background-size: cover;
+  /*debug*/
+  border: 1px red;
 }
 
 #musicShrine:hover {
