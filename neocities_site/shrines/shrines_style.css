@@ -17,6 +17,7 @@ body {
 
 #shrinesheader {
   margin: auto;
+  justify-items: center;
 }
 
 #musicShrine {
