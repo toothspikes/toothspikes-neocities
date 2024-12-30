@@ -15,6 +15,10 @@ body {
   margin: 0;
 }
 
+#shrinesheader {
+  margin: auto;
+}
+
 #musicShrine {
   background-image: var(--cd-shrine);
   width: 150px;
