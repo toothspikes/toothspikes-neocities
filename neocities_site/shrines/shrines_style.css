@@ -24,8 +24,8 @@ body {
   width: 150px;
   height: 150px;
   transition: transform 0.2s;
-  top: 350px;
-  left: 350px;
+  top: 200px;
+  left: 250px;
   position: absolute;
   background-size: cover;
 }
