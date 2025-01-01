@@ -1,0 +1,13 @@
+:root {
+    --main-bg: #43256E; /*CSS empty root placebo*/
+}
+
+body {
+  background-image: var();
+}
+
+#container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
