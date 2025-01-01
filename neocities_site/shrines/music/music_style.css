@@ -11,3 +11,11 @@ body {
     position: relative;
     margin: auto;
 }
+
+main {
+  width: 150px;
+  height: 50px;
+  display: block;
+  border:red 1px; /*TEST*/
+  margin: 5px;
+}
