@@ -53,4 +53,37 @@ main {
 .entryBox {
   width: 750px;
   height: auto;
+  margin: 20px 0;
+  padding: 15px;
+  display: flex;
+  align-items: start;
+}
+
+/*This switches the format of the entry box to go back and forth*/
+.entryBox:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.entryContent {
+  flex-grow: 1;
+}
+
+.albumContainer {
+  flex-shrink: 0;
+  width: 200px;
+  text-align: center;
+}
+
+.albumCover {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.albumInfo {
+  font-size: 0.9em;
+  color: black;
+  border-top: 1px solid #ffffff33;
+  padding-top: 5px;
 }
