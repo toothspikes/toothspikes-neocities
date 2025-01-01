@@ -482,54 +482,6 @@ strong {
   border-style: inset;
 }
 
-.checkbox {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  /*margin-bottom: 12px;*/
-  cursor: pointer;
-  font-size: 22px;
-  user-select: none;
-  margin: auto;
-}
-
-.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 24px;
-  width: 24px;
-  background-color: #241445;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-  
-.checkbox:hover input ~ .checkmark {
-  background-color: #8355A1;
-  box-shadow: 2px 2px 2px #241445;
-}
-
-.checkmark:after {
-  position: absolute;
-  margin: auto;
-  content: "\2713";
-  display: none;
-  cursor: wait;
-  color:  var(--text-pink);
-}
-
-.checkbox input:checked ~ .checkmark:after {
-  display: block;
-}
 
 marquee img {
 display: inline-block;
