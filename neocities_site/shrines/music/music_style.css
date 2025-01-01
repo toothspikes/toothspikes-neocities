@@ -4,6 +4,7 @@
 
 body {
   background-image: var();
+  color: white;
 }
 
 #container {
@@ -19,8 +20,8 @@ main {
   background-color: var(--main-bg); /*TEMPORARY*/
   margin-top: 25px;
   position: relative;
-  right: 0;
-
+  align-self: right;
+  padding: 7px;
 }
 
 .button {
@@ -29,7 +30,8 @@ main {
   height: 35px;
   margin: 7px;
   position: relative;
-  left: 0;  
+  align-self: left;
+  border: dotted 2px blue;
 }
 
 .button:hover {
@@ -40,6 +42,7 @@ main {
   position: absolute;
   width: 800px;
   height: 35px;
+  align-self: right;
 }
 
 .entryBox {
