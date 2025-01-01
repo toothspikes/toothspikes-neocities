@@ -28,15 +28,16 @@ main {
 }
 
 .button {
-  display: block;
+  display: inline;
   width: 150px;
-  height: 35px;
-  margin: 10px;
+  height: 25px;
+  margin: 10px 15px 10px 0;
   border: dotted 2px blue;
   background-color: darkblue;
   transition: transform 0.2s;
   padding: 8px;
   align-content: center;
+  border-radius: 20px;
 }
 
 .button:hover {
