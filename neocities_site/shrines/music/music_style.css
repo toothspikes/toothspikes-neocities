@@ -3,35 +3,40 @@
 }
 
 body {
-  background-image: var();
   color: white;
 }
 
 #container {
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
 }
 
 main {
   width: 800px;
-  height: 1000px; /*TEMPORARY*/
+  min-height: 500px;
   display: block;
   background-color: var(--main-bg); /*TEMPORARY*/
   margin-top: 25px;
-  position: relative;
-  align-self: right;
-  padding: 7px;
+  padding: 20px;
+}
+
+.navButtons {
+  width: 150px;
+  flex-shrink: 0;
 }
 
 .button {
   display: block;
   width: 150px;
   height: 35px;
-  margin: 7px;
-  position: relative;
-  align-self: left;
+  margin: 10px;
   border: dotted 2px blue;
+  background-color: darkblue;
+  transition: transform 0.2s;
+  padding: 8px;
+  align-content: center;
 }
 
 .button:hover {
@@ -39,14 +44,12 @@ main {
 }
 
 #musicPlayerContainer {
-  position: absolute;
   width: 800px;
   height: 35px;
-  align-self: right;
+  margin-top: 20px;
 }
 
 .entryBox {
   width: 750px;
   height: auto;
-  
 }
