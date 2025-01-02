@@ -28,7 +28,7 @@ main {
 }
 
 .button {
-  display: inline;
+  display: block;
   width: 150px;
   height: 25px;
   margin: 10px 15px 10px 0;
