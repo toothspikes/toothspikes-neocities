@@ -21,6 +21,8 @@ body {
 
 h1 {
   font-family: Moon;
+  text-shadow: 1px 1px #DAA217;
+  color: black;
 }
 
 #container {
@@ -43,15 +45,15 @@ main {
 }
 
 .navButtons {
-  width: 125px;
+  width: 130px;
   flex-shrink: 0;
   margin-top: 75px;
 }
 
 .button {
   display: block;
-  width: 100px;
-  height: 25px;
+  width: 130px;
+  height: 30px;
   margin: 10px 15px 10px 0;
   border: dotted 2px blue;
   background-color: darkblue;
