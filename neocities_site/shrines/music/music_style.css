@@ -2,8 +2,17 @@
     --main-bg: #43256E; /*CSS empty root placebo*/
 }
 
+@font-face {
+  font-family: Moon;
+  src: url('https://toothspikes.neocities.org/shrines/music/Moonstar.ttf');
+}
+
 body {
   color: white;
+}
+
+h1 {
+  font-family: Moon;
 }
 
 #container {
