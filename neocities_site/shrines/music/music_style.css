@@ -7,6 +7,11 @@
   src: url('https://toothspikes.neocities.org/shrines/music/Moonstar.ttf');
 }
 
+@font-face {
+  font-family: Longa Iberica;
+  src: url('https://toothspikes.neocities.org/shrines/longaIberica-DEMO.ttf');
+}
+
 body {
   color: white;
 }
@@ -29,6 +34,7 @@ main {
   background-color: var(--main-bg); /*TEMPORARY*/
   margin-top: 25px;
   padding: 20px;
+  font-family: Longa Iberica;
 }
 
 .navButtons {
