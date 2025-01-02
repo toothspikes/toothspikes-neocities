@@ -1,5 +1,6 @@
 :root {
-    --main-bg: #43256E; /*CSS empty root placebo*/
+    --main-bg: #10218b; /*CSS empty root placebo*/
+    --body-bg: url('https://toothspikes.neocities.org/shrines/music/musicshrine-bk.jpg')
 }
 
 @font-face {
@@ -8,7 +9,7 @@
 }
 
 @font-face {
-  font-family: MInecraft;
+  font-family: Minecraft;
   src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftRegular-Bmg3.otf.ttf');
 }
 
@@ -16,6 +17,7 @@ body {
   color: white;
   font-family: Minecraft;
   background-color: black;
+  background-image: var(--body-bg);
 }
 
 h1 {
@@ -33,7 +35,7 @@ main {
   width: 750px;
   min-height: 500px;
   display: block;
-  background-color: var(--main-bg); /*TEMPORARY*/
+  background-color: var(--main-bg);
   margin-top: 25px;
   padding: 20px;
   border-radius: 25px;
