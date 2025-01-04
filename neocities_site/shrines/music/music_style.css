@@ -1,5 +1,5 @@
 :root {
-    --main-bg: #0c165c; /*CSS empty root placebo*/
+    --main-bg: #415679; /*CSS empty root placebo*/
     --body-bg: url('https://toothspikes.neocities.org/shrines/music/musicshrine-bg.jpg')
 }
 
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: Minecraft;
-  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftRegular-Bmg3.otf.ttf');
+  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftRegular-Bmg3.otf');
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 
 h1 {
   font-family: Moon;
-  text-shadow: 1px 1px #DAA217;
+  text-shadow: 1px 1px #ba9356;
   color: black;
 }
 
@@ -41,7 +41,7 @@ main {
   margin-left: 10px;
   padding: 20px;
   border-radius: 25px;
-  border: dotted 2px blue;
+  border: dotted 2px #879aaf;
 }
 
 .navButtons {
@@ -55,11 +55,12 @@ main {
   width: 130px;
   height: 30px;
   margin: 10px 15px 10px 0;
-  border: dotted 2px blue;
-  background-color: darkblue;
+  border: dotted 2px #415679;
+  background-color: #879aaf;
   transition: transform 0.2s;
   text-align: center;
   border-radius: 25px;
+  padding: 3px;
 }
 
 .button:hover {
