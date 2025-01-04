@@ -56,7 +56,6 @@ main {
   display: flex; /*for text, next two lines change text horizontal, then vertical*/
   justify-content: center;
   align-items: center;
-  display: block;
   width: 130px;
   height: 30px;
   margin: 10px 15px 10px 0;
