@@ -24,7 +24,7 @@ body {
 h1 {
   font-family: Moon;
   text-shadow: 1px 1px var(--gold);
-  color: black;
+  color: #27304b;
 }
 
 #container {
@@ -53,6 +53,9 @@ main {
 }
 
 .button {
+  display: flex; /*for text, next two lines change text horizontal, then vertical*/
+  justify-content: center;
+  align-items: center;
   display: block;
   width: 130px;
   height: 30px;
@@ -60,9 +63,9 @@ main {
   border: dotted 2px var(--main-color);
   background-color: var(--secondary-color);
   transition: transform 0.2s;
-  text-align: center;
   border-radius: 25px;
   padding: 3px;
+  text-decoration: none;
 }
 
 .button:hover {
