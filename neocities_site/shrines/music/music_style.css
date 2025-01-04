@@ -3,7 +3,7 @@
     --gold: #c8ab56;
     --secondary-color: #34569c;
     --body-bg: url('https://toothspikes.neocities.org/shrines/music/musicshrine-bg.jpg')
-}
+  }
 
 @font-face {
   font-family: Moon;
@@ -24,7 +24,7 @@ body {
 h1 {
   font-family: Moon;
   text-shadow: 1px 1px var(--gold);
-  color: #27304b;
+  color: #222839;
 }
 
 #container {
@@ -78,7 +78,7 @@ main {
 }
 
 .entryBox {
-  width: 750px;
+  width: 650px;
   height: auto;
   margin: 20px 0;
   padding: 15px;
