@@ -11,6 +11,8 @@
 body {
     background-image: var(--body-bg-image);
     color: var(--text);
+    width: 10px;
+    height: auto;
 }
 
 #title {
