@@ -237,6 +237,29 @@ main {
   display: block; 
 }
 
+table {
+	width: 350px;
+    color: #c7b3d5;
+	display: absolute;
+    justify-content: center;
+    background-color: #371f5b;
+    margin-bottom: 15px;
+    }
+
+tr, th {
+    border: 2px ridge #E380FF;
+    border-radius: 10px;
+    width: 100px;
+    color: #c7b3d5;
+    background-color: #371f5b;
+    
+}
+
+#bcTable {
+	border-collapse: separate;
+    border-spacing: 10px 3px;
+}
+
 #stampbox {
   background-image: url("https://toothspikes.neocities.org/images/stampdisplaybackground.jpg");
   width: 500px;
