@@ -1,8 +1,14 @@
 /*Variables*/
-/*:root {
-
-} */
+:root {
+    --body-bg-image: url('https://toothspikes.neocities.org/shrines/kuromi/kuromiBackground.jpg');
+    --text: #643b62;   
+}
 
 /*fonts*/
 
 /*body*/
+body {
+    background-image: var(--body-bg-image);
+    color: var(--text);
+}
+
