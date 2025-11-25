@@ -1,6 +1,7 @@
 /*Variables*/
 :root {
     --body-bg-image: url('https://toothspikes.neocities.org/shrines/kuromi/kuromiBackground.jpg');
+    --title: url('https://toothspikes.neocities.org/shrines/kuromi/Kuromi-11-24-2025.png');
     --text: #643b62;   
 }
 
@@ -10,5 +11,10 @@
 body {
     background-image: var(--body-bg-image);
     color: var(--text);
+}
+
+#title {
+    background-image: var(--title);
+    padding-top: 50px;
 }
 
