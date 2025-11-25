@@ -1,7 +1,7 @@
 /*Variables*/
 :root {
-    --body-bg-image: url('https://toothspikes.neocities.org/shrines/kuromi/kuromiBackground.jpg');
-    --title: url('https://toothspikes.neocities.org/shrines/kuromi/Kuromi-11-24-2025.png');
+    --body-bg-image: url('neocities_site/shrines/kuromi/kuromiBackground.jpg');
+    --title: url('neocities_site/shrines/kuromi/Kuromi-11-24-2025.png');
     --text: #643b62;   
 }
 
