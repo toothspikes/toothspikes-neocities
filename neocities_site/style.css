@@ -238,13 +238,15 @@ main {
 }
 
 table {
+  position: relative;
+  left: 175px;
 	width: 350px;
-    color: #c7b3d5;
+  color: #c7b3d5;
 	display: absolute;
-    justify-content: center;
-    background-color: #371f5b;
-    margin-bottom: 15px;
-    }
+  justify-content: center;
+  background-color: #371f5b;
+  margin-bottom: 15px;
+}
 
 tr, th {
     border: 2px ridge #E380FF;
@@ -252,12 +254,11 @@ tr, th {
     width: 100px;
     color: #c7b3d5;
     background-color: #371f5b;
-    
 }
 
 #bcTable {
 	border-collapse: separate;
-    border-spacing: 10px 3px;
+  border-spacing: 10px 3px;
 }
 
 #stampbox {
