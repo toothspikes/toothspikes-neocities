@@ -238,8 +238,6 @@ main {
 }
 
 table {
-  position: relative;
-  left: 175px;
 	width: 350px;
   color: #c7b3d5;
 	display: absolute;
