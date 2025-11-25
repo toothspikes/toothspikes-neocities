@@ -10,8 +10,9 @@
 /*body*/
 body {
     background-image: var(--body-bg-image);
+    background-size: cover;
     color: var(--text);
-    width: 10px;
+    width: 150px;
     height: auto;
 }
 
@@ -20,3 +21,4 @@ body {
     padding-top: 50px;
 }
 
+/*grid display 3 columns, however many rows. Links to anything? What can I add on here to make it more fun?/*
