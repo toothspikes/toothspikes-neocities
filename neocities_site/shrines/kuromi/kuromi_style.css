@@ -1,8 +1,8 @@
 /*Variables*/
 :root {
-    --body-bg-image: url('neocities_site/shrines/kuromi/kuromiBackground.jpg');
+    --body-bg-image: url('https://toothspikes.neocities.org/shrines/kuromi/kuromiBackground.jpg');
     --text: #643b62;
-    --main-bg: url('neocities_site/shrines/kuromi/kuromiTextBackground.jpg');   
+    --main-bg: url('https://toothspikes.neocities.org/shrines/kuromi/kuromiTextBackground.jpg');   
 }
 
 /*fonts*/
