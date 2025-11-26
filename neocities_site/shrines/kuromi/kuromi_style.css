@@ -1,8 +1,8 @@
 /*Variables*/
 :root {
-    --body-bg-image: url('https://toothspikes.neocities.org/shrines/kuromi/kuromiBackground.jpg');
-    --title: url('https://toothspikes.neocities.org/shrines/kuromi/Kuromi-11-24-2025.png');
-    --text: #643b62;   
+    --body-bg-image: url('neocities_site/shrines/kuromi/kuromiBackground.jpg');
+    --text: #643b62;
+    --main-bg: url('neocities_site/shrines/kuromi/kuromiTextBackground.jpg');   
 }
 
 /*fonts*/
@@ -14,11 +14,16 @@ body {
     color: var(--text);
     width: 150px;
     height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px 30px;
 }
 
-#title {
-    background-image: var(--title);
-    padding-top: 50px;
+.mainContent {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    background-image: var(--main-bg);
 }
 
 /*grid display 3 columns, however many rows. Links to anything? What can I add on here to make it more fun?/*
