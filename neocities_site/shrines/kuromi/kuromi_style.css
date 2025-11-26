@@ -12,8 +12,6 @@ body {
     background-image: var(--body-bg-image);
     background-size: cover;
     color: var(--text);
-    width: 150px;
-    height: auto;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px 30px;
