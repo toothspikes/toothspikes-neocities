@@ -24,4 +24,16 @@ body {
     background-image: var(--main-bg);
 }
 
+.leftCorner {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.rightCorner {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
 /*grid display 3 columns, however many rows. Links to anything? What can I add on here to make it more fun?/*
