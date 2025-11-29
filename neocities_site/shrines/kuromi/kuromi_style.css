@@ -6,6 +6,15 @@
 }
 
 /*fonts*/
+@font-face {
+  font-family: kinLove;
+  src: url('https://toothspikes.neocities.org/shrines/kuromi/Kinlove.otf');
+}
+
+@font-face {
+  font-family: kinLove1;
+  src: url('https://toothspikes.neocities.org/shrines/kuromi/Kinlove.ttf');
+}
 
 /*body*/
 body {
@@ -15,6 +24,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px 50px;
+    font-family: 'kinLove';
 }
 
 .mainContent {
