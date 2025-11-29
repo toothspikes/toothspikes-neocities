@@ -13,8 +13,8 @@
 
 /*body*/
 body {
-    background-image: var(--body-bg-image);
-    background-size: cover;
+    /*background-image: var(--body-bg-image);
+    background-size: cover;*/
     background-color: red !important;
     color: var(--text);
     display: grid;
