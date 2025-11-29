@@ -15,6 +15,7 @@
 body {
     background-image: var(--body-bg-image);
     background-size: cover;
+    background-color: red !important;
     color: var(--text);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
