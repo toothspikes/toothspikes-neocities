@@ -14,7 +14,7 @@ body {
     color: var(--text);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 10px 30px;
+    gap: 10px 50px;
 }
 
 .mainContent {
