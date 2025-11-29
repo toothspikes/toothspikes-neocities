@@ -7,7 +7,7 @@
 
 /*fonts*/
 @font-face {
-  font-family: kinLove;
+  font-family: 'kinLove';
   src: url('https://toothspikes.neocities.org/shrines/kuromi/Kinlove.ttf') format('truetype');
 }
 
@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px 50px;
-    font-family: kinLove, Arial, sans-serif;
+    font-family: 'kinLove', Arial, sans-serif;
 }
 
 .mainContent {
