@@ -108,6 +108,10 @@ main {
   margin-bottom: 10px;
 }
 
+.albumCover:hover {
+  transform: scale(110%);
+}
+
 .albumInfo {
   font-size: 0.9em;
   color: black;
