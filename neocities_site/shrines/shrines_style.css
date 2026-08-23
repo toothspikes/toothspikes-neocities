@@ -1,5 +1,5 @@
 :root {
-  --body-bg-image: url('https://toothspikes.neocities.org/shrines/shrines-bk.jpg');
+  --body-bg-image: url('https://toothspikes.neocities.org/shrines/backgroundshrines.png');
   --cd-shrine: url('https://toothspikes.neocities.org/shrines/badtzmaruRadio.png');
   --kuromi-shrine: url('https://toothspikes.neocities.org/shrines/kuromiShrine.png');
 }
@@ -20,12 +20,6 @@ body {
   margin: auto;
 }
 
-#shrinesheader img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-}
 
 #musicShrine {
   background-image: var(--cd-shrine);
