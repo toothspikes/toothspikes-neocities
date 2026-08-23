@@ -46,8 +46,8 @@ body {
 
 #rAndmShrine {
   background-image: var(--rAndm-shrine);
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   transition: transform 0.2s;
   top: 200px;
   left: 650px;
