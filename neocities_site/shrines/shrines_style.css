@@ -66,3 +66,7 @@ body {
 #rAndmShrine:hover {
   transform: scale(110%);
 }
+
+#footer {
+  font-size: 20px;
+}
