@@ -1,0 +1,9 @@
+:root {
+    --bg-image: url('https://toothspikes.neocities.org/shrines/rickandmorty/randm-bk.webp')
+}
+
+body {
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
