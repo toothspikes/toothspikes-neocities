@@ -106,7 +106,7 @@ main {
   height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
-  transition: transform 0.2s;
+  transition: transform 0.4s;
 }
 
 .albumCover:hover {
