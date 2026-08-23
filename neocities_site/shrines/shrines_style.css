@@ -2,6 +2,7 @@
   --body-bg-image: url('https://toothspikes.neocities.org/shrines/bk-shrines.png');
   --cd-shrine: url('https://toothspikes.neocities.org/shrines/badtzmaruRadio.png');
   --kuromi-shrine: url('https://toothspikes.neocities.org/shrines/kuromiShrine.png');
+  --rAndm-shrine: url('https://toothspikes.neocities.org/shrines/rickmortyportal.jpg');
 }
 
 
@@ -43,10 +44,25 @@ body {
   background-size: cover;
 }
 
+#rAndmShrine {
+  background-image: var(--rAndm-shrine);
+  width: 150px;
+  height: 150px;
+  transition: transform 0.2s;
+  top: 200px;
+  left: 450px;
+  position: absolute;
+  background-size: cover;
+}
+
 #musicShrine:hover {
   transform: scale(110%);
 }
 
 #kuromiShrine:hover {
+  transform: scale(110%);
+}
+
+#rAndmShrine:hover {
   transform: scale(110%);
 }
