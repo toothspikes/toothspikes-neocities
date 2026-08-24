@@ -2,6 +2,11 @@
     --bg-image: url('https://toothspikes.neocities.org/shrines/rickandmorty/randm-bk.webp')
 }
 
+@font-face {
+  font-family: Minecraft;
+  src: url('https://toothspikes.neocities.org/fonts/minecraft-font/MinecraftRegular-Bmg3.otf');
+}
+
 body {
     background-image: var(--bg-image);
     background-repeat: no-repeat;
@@ -20,4 +25,6 @@ main {
     scrollbar-color: #7CB030 #e4d867;
     overflow-y: auto;
     overflow-x: clip;
+    color: #44601b;
+    font-family: Minecraft;
 }
