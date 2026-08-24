@@ -16,7 +16,6 @@ body {
         "header header"
         "main side"
         "footer footer";
-    grid-template-rows: 1fr 2fr 1fr;
 }
 
 .body div {
