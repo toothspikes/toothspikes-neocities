@@ -11,12 +11,10 @@ body {
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-columns: "main images";
+    display: inline-flex;
 }
 
-.container div.main {
-    grid-area: main;
+main {
     background-color: #9bdc3c;
     width: 750px;
     max-height: 600px;
@@ -30,19 +28,4 @@ body {
     overflow-x: clip;
     color: #44601b;
     font-family: Minecraft;
-}
-
-.container div.images {
-    grid-area: images;
-}
-
-/*for use later*/
-.container div.other {
-    grid-area: other;
-}
-
-/*for use later*/
-.container div.footer {
-    grid-area: footer;
-    text-align: center;
 }
