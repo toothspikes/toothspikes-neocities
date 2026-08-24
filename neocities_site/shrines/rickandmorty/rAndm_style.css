@@ -16,6 +16,6 @@ main {
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
-    opacity: 0.6px;
+    opacity: 0.6;
     scrollbar-color: #7CB030 #e4d867;
 }
