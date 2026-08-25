@@ -16,6 +16,8 @@ body {
         "header header"
         "main side"
         "footer footer";
+    grid-auto-rows: 1fr 2fr 1fr;
+    grid-auto-columns: auto auto;
 }
 
 .body div {
