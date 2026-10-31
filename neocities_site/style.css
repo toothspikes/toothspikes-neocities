@@ -272,6 +272,16 @@ tr, th {
   border-width: 6px 2px 0 2px;/*top right bottom left*/
 }
 
+#commentbox {
+  width: 500px;
+  height: 450px;
+  position: absolute;
+  top: 1225px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #43256E;
+}
+
 /*Start of music player*/
 #musicPlayerContainer {
   position: absolute;
